@@ -2045,7 +2045,8 @@ ${l}
                             <div class="btn-toggle-label">About</div> 
                             <div class="text-description" id="rogold-about" style="margin-top: 5px;">
                                 RoGold is made by the Roblox user <a href="/users/50654562/profile" target="_blank" class="text-link">alexop1000</a>.<br>
-                                It was created to help developers but expanded out with a plethora of features when the demand came.<br>
+                                This crack was made by the Roblox user <a href="/users/3130740803/profile" target="_blank" class="text-link">DatEmage</a>.<br>
+				It was created to help developers but expanded out with a plethora of features when the demand came.<br>
                                 Check out some of the creator's other projects:
                                 <ul>
                                     <li>- <a class="text-link" href="https://www.roblox.com/games/6723408631/PIRATE-Idle-Tappers" target="_blank">Idle Tappers</a></li>
