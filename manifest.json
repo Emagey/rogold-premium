@@ -1,0 +1,81 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "RoGold - Level Up Roblox",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "author": "alexop",
+  "version": "1.6.4",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "resources": [
+        "init.js",
+        "svg/*",
+        "images/*.png",
+        "images/*.svg",
+        "retrieveGlobal.js",
+        "useAngular.js",
+        "icons/*",
+        "src/libraries/request.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://web.roblox.com/*",
+        "*://www.roblox.com/*"
+      ],
+      "resources": [
+        "assets/inject.js-DFsZ8Gqk.js"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "assets/inject.js-loader-Bk6tIiud.js"
+      ],
+      "matches": [
+        "*://www.roblox.com/*",
+        "*://web.roblox.com/*"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "css": [
+        "assets/inject-BIh1a4Ut.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": "icons/grey.png",
+    "default_popup": "public/popup/popup.html"
+  },
+  "icons": {
+    "16": "icons/grey_16x16.png",
+    "48": "icons/grey_48x48.png",
+    "128": "icons/grey_128x128.png"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "host_permissions": [
+    "*://*.roblox.com/*",
+    "*://*.rbxcdn.com/*"
+  ],
+  "short_name": "RoGold",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{048bba8c-c62d-4967-963d-d663cae75d3f}"
+    }
+  }
+}
